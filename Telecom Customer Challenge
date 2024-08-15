@@ -1,0 +1,18 @@
+Telecom Customer Challenge
+
+SELECT *
+FROM products, customer_subscriptions;
+
+SELECT product_name
+FROM products
+WHERE product_type="Internet";
+
+SELECT customer_id, product_name
+FROM products, customer_subscriptions
+WHERE product_name="High-Speed Internet";
+
+SELECT email, product_type
+FROM products, customer_subscriptions
+WHERE product_type="Internet";
+
+-- comment?
