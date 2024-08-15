@@ -1,4 +1,4 @@
-
+#This project utilizes the following Superstore data: 
 CREATE TABLE products (
     product_id INTEGER PRIMARY KEY,
     product_name TEXT,
@@ -34,7 +34,7 @@ VALUES
     ('456789012345', 4, 79.99, 'bob.johnson@example.com'),
     ('567890123456', 1, 49.99, 'susan.wilson@example.com');
 
-
+#For your first query, write SQL that will select the product names of all the Internet products types.
 SELECT *
 FROM products, customer_subscriptions;
 
@@ -42,10 +42,12 @@ SELECT product_name
 FROM products
 WHERE product_type="Internet";
 
+#Write a query that will select the customer IDs for all the customers who are subscribed to High-Speed Internet (product_id =1). 
 SELECT customer_id, product_name
 FROM products, customer_subscriptions
 WHERE product_name="High-Speed Internet";
 
+#Write a query that will select the email addresses of all the customers who are subscribed to products with the "Internet" product type. 
 SELECT email, product_type
 FROM products, customer_subscriptions
 WHERE product_type="Internet";
